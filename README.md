@@ -1,7 +1,7 @@
 # PeopleSoft Grades Bot
 Discord bot which will notify you about new grades, specifically those from PeopleSoft. The bot will send messages on Discord through DMs.
 
-# Requiremnts
+# Requirements
 - Node.js v12.20.0 or later
 - [pm2](https://npmjs.com/package/pm2)
 - [Discord bot](https://discord.com/developers/applications) who is in a server with you
