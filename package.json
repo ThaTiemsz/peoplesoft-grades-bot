@@ -1,0 +1,26 @@
+{
+  "name": "peoplesoft-grades-bot",
+  "version": "1.0.0",
+  "description": "Discord bot which will notify you about new grades",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "node --loader @esbuild-kit/esm-loader --no-warnings ./src/index.ts",
+    "pm2": "pm2 start --name=\"grades\" --log-date-format=\"YYYY-MM-DD HH:mm Z\" node -- --loader @esbuild-kit/esm-loader --no-warnings ./src/index.ts"
+  },
+  "keywords": ["peoplesoft", "grades", "discord"],
+  "author": "Tiemen",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/rest": "^1.5.0",
+    "discord-api-types": "^0.37.35",
+    "dotenv": "^16.0.3",
+    "playwright": "^1.30.0"
+  },
+  "devDependencies": {
+    "@esbuild-kit/esm-loader": "^2.5.5"
+  },
+  "peerDependencies": {
+    "pm2": "5.x"
+  }
+}
