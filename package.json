@@ -8,7 +8,11 @@
     "start": "node --loader @esbuild-kit/esm-loader --no-warnings ./src/index.ts",
     "pm2": "pm2 start --name=\"grades\" --log-date-format=\"YYYY-MM-DD HH:mm Z\" node -- --loader @esbuild-kit/esm-loader --no-warnings ./src/index.ts"
   },
-  "keywords": ["peoplesoft", "grades", "discord"],
+  "keywords": [
+    "peoplesoft",
+    "grades",
+    "discord"
+  ],
   "author": "Tiemen",
   "license": "MIT",
   "dependencies": {
@@ -18,7 +22,8 @@
     "playwright": "^1.30.0"
   },
   "devDependencies": {
-    "@esbuild-kit/esm-loader": "^2.5.5"
+    "@esbuild-kit/esm-loader": "^2.5.5",
+    "@types/node": "^18.14.0"
   },
   "peerDependencies": {
     "pm2": "5.x"
