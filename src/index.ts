@@ -19,7 +19,7 @@ interface Data {
 config()
 
 const DATA_FILE = "./data/grade.json"
-const INTERVAL = 600e3 // 10 minutes
+const INTERVAL = 300e3 // 5 minutes
 const rest = new REST({ version: "10" }).setToken(process.env.DISCORD_BOT_TOKEN)
 
 runInterval()
